@@ -16,8 +16,7 @@ static void create_buf(zb_buf_t *buf, zb_uint8_t* message, zb_uint8_t count, zb_
 	req->src_endpoint = 10;
 	req->dst_endpoint = 10;
 	buf->u.hdr.handle = 0x11;
-	for(zb_uint8_t i = 0; i < count; i++)
-		ptr[i] = message[i];
+	memcpy(ptr, message, count*sizeof(zb_uint8_t));
 	ZB_SCHEDULE_CALLBACK(zb_apsde_data_request, ZB_REF_FROM_BUF(buf));
 }
 

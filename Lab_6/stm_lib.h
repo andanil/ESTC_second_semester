@@ -1,4 +1,5 @@
-
+#ifndef STMLIB_H
+#define STMLIB_H
 #include "zb_common.h"
 #include "zb_scheduler.h"
 #include "zb_bufpool.h"
@@ -32,4 +33,4 @@ void init_buttons(void);
 
 void turn_off(void);
 
-
+#endif

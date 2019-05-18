@@ -62,8 +62,8 @@ static void send(zb_uint8_t param) ZB_CALLBACK;
 static void set_color_command(zb_uint8_t param) ZB_CALLBACK ;
 static void set_brightness_command(zb_uint8_t param) ZB_CALLBACK ;
 static void set_toggling_command(zb_uint8_t param) ZB_CALLBACK ;
-static zb_bool_t button0 = ZB_FALSE;
-static zb_bool_t button1 = ZB_FALSE;
+static volatile zb_bool_t button0 = ZB_FALSE;
+static volatile zb_bool_t button1 = ZB_FALSE;
 zb_ieee_addr_t g_zr_addr = {0x01, 0xbb, 0xbb, 0xbb, 0xbb, 0xbb, 0xbb, 0xbb};
 
 

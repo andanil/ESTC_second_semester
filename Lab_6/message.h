@@ -26,5 +26,4 @@ void send_set_color_command(zb_uint8_t param);
 void send_toggling_command(zb_uint8_t param);
 void send_brightness_command(zb_uint8_t param);
 
-
 #endif
